@@ -1,17 +1,21 @@
 import { createTheme } from "@mui/material/styles";
 import LoadingButton from "@mui/lab/LoadingButton";
+import Jost from "@fontsource/jost";
 
 const theme = createTheme({
+  typography: {
+    fontFamily: "jost",
+  },
   palette: {
     primary: {
-      main: "#F27224",
+      main: "#010E7E",
       contrastText: "#fff",
     },
   },
   components: {
     MuiTypography: {
       defaultProps: {
-        fontWeight: 600,
+        fontWeight: 700,
       },
     },
     MuiSkeleton: {
@@ -75,8 +79,9 @@ const theme = createTheme({
       },
       styleOverrides: {
         root: {
-          fontWeight: 600,
-          borderRadius: 20,
+          fontWeight: 700,
+          borderRadius: "20px",
+          textTransform: "none",
         },
       },
     },
